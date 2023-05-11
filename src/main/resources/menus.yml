@@ -1,0 +1,32 @@
+JoinMenu:
+  TitleMenu: '&7Entrar a un equipo'
+  Slots: 27
+  Items:
+    RED:
+      material: RED_WOOL
+      name: '&cEquipo ROJO'
+      lore:
+        - ''
+        - '&7Clic para unirte'
+        - '&7al equipo rojo'
+        - ''
+      slot: 11
+    RANDOM:
+      material: NETHER_STAR
+      name: '&6Equipo Aleatorio'
+      lore:
+        - ''
+        - '&7Clic para unirte a'
+        - '&7un equipo aleatoriamente'
+        - ''
+      slot: 13
+    BLUE:
+      material: BLUE_WOOL
+      name: '&9Equipo AZUL'
+      lore:
+        - ''
+        - '&7Clic para unirte'
+        - '&7al equipo azul'
+        - ''
+      slot: 15
+

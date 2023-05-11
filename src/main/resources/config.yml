@@ -1,0 +1,150 @@
+Database:
+  TableName: 'ctw_scores'
+  mysql:
+    enabled: true
+    host: localhost
+    port: 3306
+    databaseName: 'ctw'
+    user: 'root'
+    password: ''
+    ssl: false
+  removeOldUsers:
+    enabled: false
+    inactive: 60
+GameMaps:
+  - Arcilla
+  - Jungla
+  - Desierto
+  - Desert
+  - Coral
+  - Mario
+  - NewDay
+  - Ovejas
+  - Pursuit
+  - Race
+  - Wallop
+  - Xi
+  - Zetas
+LobbyServers:
+  - ctwLobby
+
+ItemsBlacklist:
+  GLASS:
+    short-value: none
+    amount: 1
+  STONE_SWORD:
+    short-value: none
+    amount: 1
+  BOW:
+    short-value: none
+    amount: 1
+  IRON_PICKAXE:
+    short-value: none
+    amount: 1
+  WATER_BUCKET:
+    short-value: none
+    amount: 1
+  GRILLED_PORK:
+    short-value: none
+    amount: 1
+  LOG:
+    short-value: none
+    amount: 1
+  ARROW:
+    short-value: none
+    amount: 1
+  LEATHER_HELMET:
+    short-value: none
+    amount: 1
+  LEATHER_CHESTPLATE:
+    short-value: none
+    amount: 1
+  LEATHER_LEGGINGS:
+    short-value: none
+    amount: 1
+  LEATHER_BOOTS:
+    short-value: none
+    amount: 1
+Settings:
+  SystemLanguage: EN
+  ServerRestartAfterGamesPlayed: 0
+  #Server will auto restart if memory usage goes above 95%
+  ServerLowMemoryRestart: true
+  #Join message delay in mili-seconds. Set to 0 for no delay. Default value is 2000 (2 seconds, 1000 mili-seconds = 1 second)
+  JoinMessageDelay: 2000
+  #Enable the sound effects on kill streak messages. I recommend you use the custom sounds, check the plugin page for details.
+  EnableKillStreakSounds: true
+  #Allow fire to spread.
+  allowFireSpread: false
+  #Allow block damage on explosions outside protected areas.
+  allowBlockExplode: true
+  #Allow snow, ice to melt or to form.
+  allowBlockMeltForm: false
+  #Allow leaf to decay or grow.
+  allowDecayGrowth: false
+  #These recipes will be removed from the game.
+  #Add here the result item from the crafting table.
+  #Valid item names here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+  DisabledRecipes:
+    - WOOL
+  Modules:
+    DisableChatModule: false
+#Available placeholders: <TeamPrefix> <GlobalPrefix> <PlayerName> <Message> <Coins> <Score>
+ChatFormat:
+  Spectator: '&7(&6<Score>&7) &f<TeamPrefix><PlayerName>&f: <Message>'
+  BlueTeam: '&7(&6<Score>&7) &9<TeamPrefix><PlayerName>&f: <Message>'
+  RedTeam: '&7(&6<Score>&7) &c<TeamPrefix><PlayerName>&f: <Message>'
+  GlobalChatCmd: '&7(&6<Score>&7) &d<GlobalPrefix><PlayerName>&7:&f <Message>'
+Rewards:
+  Score:
+    death: 1
+    kill: 2
+    placeWool: 15
+    doubleBonus: 40
+    victory: 20
+  Coins:
+    kill: 5
+    placeWool: 30
+    doubleBonus: 100
+    victory: 20
+Achievements:
+  Sniper:
+    Distance-For-I: 25
+    Distance-For-II: 35
+    Distance-For-III: 45
+    Distance-For-IV: 55
+    Distance-For-V: 80
+  Melee-Kills:
+    Kills-For-I: 50
+    Kills-For-II: 100
+    Kills-For-III: 150
+    Kills-For-IV: 200
+    Kills-For-V: 300
+  Bow-Kills:
+    Kills-For-I: 50
+    Kills-For-II: 100
+    Kills-For-III: 150
+    Kills-For-IV: 200
+    Kills-For-V: 300
+  Overpowered:
+    Kills-For-I: 120
+    Kills-For-II: 250
+    Kills-For-III: 500
+    Kills-For-IV: 1000
+    Kills-For-V: 1500
+  WoolMaster:
+    Wools-For-I: 10
+    Wools-For-II: 22
+    Wools-For-III: 50
+    Wools-For-IV: 100
+    Wools-For-V: 200
+#This feature allows you to remove unneeded data when the server shuts down or restarts.
+#For example: Players data, stats, or other plugins that store data as file based and are not needed.
+#As in time the server will store many players data there is a need to clean up unneeded files.
+DataCleanup:
+  #Enable or disabled data clean up | true or false
+  Enabled: false
+  #This can include folders or files. The root directory is the server main folder.
+  CleanUp-Paths:
+    - 'world/playerdata'
+    - 'world/stats'

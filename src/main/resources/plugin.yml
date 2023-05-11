@@ -1,0 +1,31 @@
+name: CTW
+version: '${project.version}'
+main: com.imjona.ctw.CTW
+authors: [ _ImJona ]
+description: Captura la lana
+
+commands:
+  join:
+    aliases: jugar
+    description: Comando para unirse
+  chat:
+    aliases: cc
+    description: Cambia tu modo de chat
+  editkit:
+    aliases: kitedit
+    description: Edita tu kit
+  g:
+    aliases: global
+    description: Envía mensaje de forma general
+  ayuda:
+    aliases: help
+    description: Recibe una lista de comandos de ctw
+  leave:
+    aliases: salir
+    description: Sal de la partida en la que te encuentras
+  setup:
+    aliases: ctw
+    description: Comando principal
+  stats:
+    aliases: estadistica, estadisticas
+    description: Ve tus estadísticas dentro del juego
